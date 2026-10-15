@@ -121,7 +121,7 @@ export default function StressPage() {
 function Waterfall({ r, base }: { r: StressResult; base: number }) {
   const steps = [...Object.keys(CLASS_LABEL).map((k) => ({ label: CLASS_LABEL[k], v: r.by_class[k] })), { label: "Cross", v: r.interaction }];
   let run = base;
-  const cats = ["Base value", ...steps.map((s) => s.label), "Stressed value"];
+  const cats = ["Base", ...steps.map((s) => s.label), "Stressed"];
   const invisible: number[] = [base * 0];
   const up: (number | string)[] = ["-"];
   const down: (number | string)[] = ["-"];
