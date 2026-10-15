@@ -1,0 +1,6 @@
+id,instrument_type,ticker,quantity,price,currency,nominal,clean_price,coupon_rate,frequency,maturity
+A,EQUITY,NRDB,100,10,EUR,,,,,
+A,EQUITY,HELX,100,-5,EUR,,,,,
+B,BOND_FIXED,,,,EUR,1000,99,3.5,3,2030-01-01
+C,BOND_FLOAT,,,,EUR,1000,99,,,2030-01-01
+D,EQUITY,ORBS,abc,10,XXX,,,,,

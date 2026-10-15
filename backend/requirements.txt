@@ -1,0 +1,15 @@
+# Runtime
+fastapi==0.143.1
+uvicorn[standard]==0.53.0
+pydantic==2.13.5
+sqlalchemy==2.1.4
+alembic==1.20.0
+python-multipart==0.0.32
+openpyxl==3.1.5
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+httpx==0.28.1
+reportlab==5.0.1
+# PostgreSQL driver (only needed when DATABASE_URL points to PostgreSQL)
+psycopg[binary]>=3.2

@@ -1,0 +1,26 @@
+# Local production-like stack: PostgreSQL + FastAPI + Next.js
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: riskpilot
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
+      POSTGRES_DB: riskpilot
+    volumes: [pgdata:/var/lib/postgresql/data]
+  api:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://riskpilot:${POSTGRES_PASSWORD:-change-me}@db:5432/riskpilot
+      RISKPILOT_DATA_DIR: /data
+    volumes: [apidata:/data]
+    depends_on: [db]
+  web:
+    build:
+      context: ./frontend
+      args:
+        RISKPILOT_API_URL: http://api:8000
+    ports: ["3000:3000"]
+    depends_on: [api]
+volumes:
+  pgdata:
+  apidata:
