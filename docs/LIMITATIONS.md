@@ -2,7 +2,7 @@
 
 ## Données
 - Le jeu de démonstration est **synthétique** (émetteurs fictifs). Les résultats illustrent la méthode, pas un marché réel.
-- **Connecteur BCE** : il est écrit et testé sur une réponse simulée au format SDMX-CSV documenté, mais **l'appel réel n'a pas pu être validé** dans l'environnement de développement (sortie réseau bloquée, erreur 403 du proxy, que l'application affiche telle quelle). Validez-le en local avec *Data Sources → Test connection*.
+- **Connecteur BCE** : validé en conditions réelles le 15/10/2026 (connexion réussie, 10 séries récupérées : 4 taux de change et 6 ténors de la courbe AAA, 1 483 dates du 04/01/2021 au 15/10/2026). Le jeu BCE ne contient ni actions ni spreads de crédit : utilisé seul, il ne couvre que le risque de change et de taux, et les autres positions sont exclues et signalées.
 - Il n'existe pas de source d'actions réelles intégrée : aucune API gratuite n'autorise la redistribution. Les historiques réels s'importent en CSV, avec une provenance déclarée.
 - Rien n'est affiché en temps réel. Toutes les séries sont des valeurs de fin de journée.
 

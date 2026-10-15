@@ -109,7 +109,7 @@ POSTGRES_PASSWORD=<mot-de-passe> docker compose up --build    # http://localhost
 | Source | Provenance | Statut |
 |---|---|---|
 | Générateur synthétique (graine 42) | SYNTHETIC | Toujours disponible ; actions, ETF, FX, courbes EUR/USD, spreads |
-| BCE Data Portal (taux de référence FX, courbe AAA zone euro) | HISTORICAL_REAL | Connecteur prêt, à tester via *Data Sources → Test connection* (voir les limites) |
+| BCE Data Portal (taux de référence FX, courbe AAA zone euro) | HISTORICAL_REAL | Validé en réel (15/10/2026) : 10 séries depuis 2021, mise à jour via *Data Sources* |
 | Import CSV (`date, EQ:XXX, FX:USD, IR:EUR:10Y, CS:EUR:IG…`) | Déclarée par l'utilisateur | Contrôle qualité bloquant en cas d'erreur |
 
 Les données de la BCE sont des valeurs de référence publiées vers 16 h, jamais du temps réel. Leur réutilisation est autorisée en citant « Source: ECB Data Portal ».

@@ -1,8 +1,11 @@
 __pycache__/
+.venv/
+venv/
 *.pyc
 .pytest_cache/
 backend/data/
 .env
+.env.local
 node_modules/
 .next/
 frontend/out/
