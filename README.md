@@ -1,5 +1,7 @@
 # RiskPilot
 
+**Démo en ligne : [risk-pilot-xi.vercel.app](https://risk-pilot-xi.vercel.app)** (données synthétiques ; premier chargement d'environ une minute si l'application était en veille)
+
 Plateforme d'analyse des risques de marché et de crédit d'un portefeuille multi-actifs : import et validation de positions, expositions, VaR et Expected Shortfall historiques et paramétriques, backtesting, stress tests hypothétiques et historiques, analytique obligataire, attribution du risque, surveillance de marché par règles d'alerte, Decision Brief exportable en PDF et CSV.
 
 RiskPilot est un outil d'analyse et de simulation. Il n'exécute aucun ordre et ne fournit aucune recommandation d'investissement. Les données fournies sont **synthétiques** et explicitement signalées comme telles.
